@@ -1,0 +1,127 @@
+:root{
+    --color1: #00635A;
+    --color2: #D9CCC1;
+    --color3: #44E3D3;
+    --color4: #32A89C;
+    --color5: #009688;
+
+    --text: rgb(17, 17, 17);
+    --text2:rgb(41, 41, 41);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}body{
+    background-color: var(--color1);
+
+}header{
+    min-height: 40px;
+    height: 6vh;
+    width: 100vw;
+    background-color: var(--color2);
+    position: relative;
+}
+header::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 85%;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--color1);
+}main{
+    background-color: var(--color2);
+    width: 98vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5px;
+    padding: 12px;
+
+    border-radius: 10px;
+    position: relative;
+}#chat{
+    height: 90%;
+    width: 98%;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow: scroll;
+}
+
+.message{
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+}.myMsg{
+    background-color: var(--color3);
+    border-radius: 15px 15px 0 15px;
+    align-self: flex-end;
+}.hisMsg{
+    background-color: var(--color4);
+    border-radius: 15px 15px 15px 0;
+    align-self: flex-start;
+}
+
+.user{
+    align-self: flex-start;
+    font-weight: bolder;
+}.text{
+    align-self: flex-start;
+    font-size: 1rem;
+}.hour{
+    align-self: flex-end;
+    font-weight: lighter;
+    font-size: .9rem;
+    color: var(--text2);
+}
+
+#controls{
+    width: 98%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}#msgInput{
+    width: 96%;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid var(--color1);
+    font-size: 1.2rem;
+}#sendMsg{
+    width: 38px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border-style: none;
+    border: 2px solid var(--color1);
+    background-color: var(--color5);
+    cursor: pointer;
+}#sendMsg:hover{
+    background-color: var(--color4);
+}
+
+
+@media (max-width: 900px) {
+    .message{
+        max-width: 70%;
+    }
+}
+@media (max-width: 700px) {
+    .message{
+        max-width: 90%;
+    }
+}
