@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <svg width="184" height="184" viewBox="0 0 184 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_8_2)">
+                <path d="M92 21.2893C81.4706 21.2893 71.4787 23.5908 62.5 27.718M92 21.2893C102.529 21.2893 112.521 23.5907 121.5 27.718M92 21.2893L92 92L92.0001 162.711M92.0001 162.711C81.4707 162.711 71.4788 160.409 62.5001 156.282M92.0001 162.711C102.529 162.711 112.521 160.409 121.5 156.282M21.2894 92C21.2894 120.523 38.1776 145.102 62.5001 156.282M21.2894 92C21.2894 63.4769 38.1775 38.8984 62.5 27.718M21.2894 92C21.2894 92 56.5 104.5 92 104.5C127.5 104.5 162.711 92 162.711 92M62.5001 156.282C62.5001 156.282 52.5 127 52.5 92C52.5 57 62.5 27.718 62.5 27.718M121.5 156.282C145.823 145.102 162.711 120.523 162.711 92M121.5 156.282C121.5 156.282 131.5 127 131.5 92C131.5 57 121.5 27.718 121.5 27.718M162.711 92C162.711 63.4769 145.823 38.8983 121.5 27.718"  stroke-width="10"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_8_2">
+                <rect width="184" height="184"/>
+                </clipPath>
+                </defs>
+            </svg>
+                
+        </div>
+        <button id="connect">desconectar</button>
+    </header>
+
+    <main>
+        <div id="chat">
+
+            <div class="message sisMsg">
+                <span class="text">Aguarde a mensagem de conexão, para poder mandar mensagens.</span>
+            </div>
+
+
+        </div>
+
+        <div id="controls">
+            <input id="msgInput" type="text">
+            <button id="sendMsg">
+                <svg width="126" height="97" viewBox="0 0 126 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M124.542 46.3788L2.73547 0.409748C1.19481 -0.171692 -0.349086 1.25379 0.10783 2.83586L8.81046 32.9687C8.93334 33.3942 9.19394 33.7668 9.5514 34.0282L26.7923 46.6356C27.8849 47.4346 27.8849 49.0654 26.7923 49.8644L9.55139 62.4718C9.19394 62.7332 8.93334 63.1058 8.81046 63.5313L0.107831 93.6641C-0.349085 95.2462 1.19482 96.6717 2.73549 96.0902L124.542 50.1212C126.267 49.4701 126.267 47.0299 124.542 46.3788Z"/>
+                </svg>
+                    
+            </button>
+
+            
+        </div>
+    </main>
+
+    <script src="../scripts/wsClient.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

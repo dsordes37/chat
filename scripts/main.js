@@ -1,10 +1,13 @@
-const user = "D'Sordes"
+const user = sessionStorage.getItem("nick")
+console.log(user)
 
 const input=document.getElementById('msgInput');
 const btSend=document.getElementById('sendMsg');
 const chat=document.getElementById('chat');
 
 const bt=document.getElementById('connect')
+
+
 
 let testeObj={
     type: "userMsg",

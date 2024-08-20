@@ -2,7 +2,11 @@
 const ws=new WebSocket('wss://websocket-ds.up.railway.app')
 
 ws.onopen=()=>{
-    console.log('conectado')
+    addMsg({
+        type: "sisMsg",
+        text: "Você entrou no chat",
+        hour: getFormatedTime()
+    })
 }
 
 ws.onmessage=(event)=>{

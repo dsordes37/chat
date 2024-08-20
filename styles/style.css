@@ -140,6 +140,33 @@ header::after{
     fill: var(--color1);
 }
 
+#nickForm{
+    width: 60%;
+    height: 80%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}#nickForm input{
+    width: 80%;
+    font-size: 1.3rem;
+}#nickForm button{
+    width: 30%;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--color1);
+    color: white;
+    cursor: pointer;
+}#nickForm button:hover{
+    background-color: var(--color5);
+}
 
 @media (max-width: 900px) {
     .message{
@@ -149,5 +176,9 @@ header::after{
 @media (max-width: 700px) {
     .message{
         max-width: 90%;
+    }
+}@media (max-width: 600px) {
+    #nickForm{
+        width: 90%;
     }
 }
