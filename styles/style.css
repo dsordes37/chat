@@ -1,5 +1,5 @@
 :root{
-    --color1: #00635A;
+    --color1: #003b36;
     --color2: #D9CCC1;
     --color3: #44E3D3;
     --color4: #32A89C;
@@ -23,6 +23,9 @@
     height: 6vh;
     width: 100vw;
     background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     position: relative;
 }
 header::after{
@@ -34,6 +37,14 @@ header::after{
     height: 20px;
     border-radius: 10px;
     background-color: var(--color1);
+}#logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}header svg{
+    width: 30px;
+    stroke: var(--color1);
 }main{
     background-color: var(--color2);
     width: 98vw;
@@ -73,6 +84,14 @@ header::after{
     background-color: var(--color4);
     border-radius: 15px 15px 15px 0;
     align-self: flex-start;
+}.sisMsg{
+    background-color: var(--color5);
+    border-radius: 15px;
+    align-self: center;
+    flex-direction: row;
+    gap: 10px;
+}.quitMsg{
+    background-color: rgb(255, 78, 78);
 }
 
 .user{
@@ -110,8 +129,15 @@ header::after{
     border: 2px solid var(--color1);
     background-color: var(--color5);
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }#sendMsg:hover{
     background-color: var(--color4);
+}#sendMsg svg{
+    width: 80%;
+    fill: var(--color1);
 }
 
 
